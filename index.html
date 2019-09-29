@@ -4,13 +4,33 @@
 <head>
     <title>Pomodoro Clock</title>
     <meta charset="UTF-8">
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Josefin+Sans:600|Skranji&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div id="pomodoro" class="container">
+    <div id="pomodoro">
         <div id="title">Pomodoro Clock</div>
+        <div id="session" class="container edit">
+                <i class="fa fa-arrow-circle-o-down arrow"></i>
+                <div id="session-edit">
+                    <span class='section-title'>Session</span>
+                    <span class='section-length'>25</span>
+                </div>
+                <i class="fa fa-arrow-circle-o-up arrow"></i>
+        </div>
+        <div id="break" class="container edit">
+                <i class="fa fa-arrow-circle-o-down arrow"></i>
+                <div id="break-edit">
+                    <span class='section-title'>Break</span>
+                    <span class='section-length'>5</span>
+                </div>
+                <i class="fa fa-arrow-circle-o-up arrow"></i>
+        </div>
+        <div id="clock" class="container">
+
+        </div>
     </div>
     <script src="js/script.js"></script>
 </body>

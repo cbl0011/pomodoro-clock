@@ -1,22 +1,22 @@
-* {
+body {
     background-color: rgb(165, 165, 165);
 }
 
 #pomodoro {
     background-color: black;
+    box-shadow: 5px 8px 12px black;
     height: 600px;
     width: 800px;
     margin: 5% auto;
     border-radius: 10px;
     display: grid;
-    grid-gap: 10px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 3fr 3fr 3fr;
     grid-template-areas: 
         "title title"
         "session break"
         "clock clock"
-        "clock clock"                
+        "clock clock";               
 }
 
 #title {
@@ -29,4 +29,59 @@
     padding-top: 8px;
     border-radius: 5px;
     background: rgb(224, 224, 224);
+}
+
+.container {
+    margin: 5px;
+    background-color: black;
+    border: 3px solid rgb(224, 224, 224);
+    border-radius: 10px;
+    color: rgb(224, 224, 224);
+}
+
+.edit {
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+
+#session {
+    display: grid;
+    grid-area: session;
+}
+
+#break {
+    display: grid;
+    grid-area: break;
+}
+
+#clock {
+    display: grid;
+    grid-area: clock;
+}
+
+.arrow {
+    padding-top: 15px;
+    font-size: 48px;
+    color: rgb(224, 224, 224);
+    align-self: center;
+    cursor: pointer;
+}
+
+div[id$="-edit"] {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+.section-title {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.section-length {
+    font-family: 'Skranji', cursive;
+    font-size: 42px;
 }
