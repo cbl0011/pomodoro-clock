@@ -58,14 +58,25 @@ body {
 #clock {
     display: grid;
     grid-area: clock;
+    grid-template-rows: 2fr 4fr 2fr;
 }
 
 .arrow {
-    padding-top: 15px;
+    margin-top: 35px;
     font-size: 48px;
     color: rgb(224, 224, 224);
     align-self: center;
+    justify-self: center;
     cursor: pointer;
+}
+
+.arrow:hover, .arrow:focus {
+    color: rgb(129, 129, 129);
+}
+
+.arrow:active {
+    color: rgb(104, 104, 104);
+    font-size: 56px;
 }
 
 div[id$="-edit"] {
@@ -84,4 +95,41 @@ div[id$="-edit"] {
 .section-length {
     font-family: 'Skranji', cursive;
     font-size: 42px;
+}
+
+.button-container {
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 1fr 11fr 1fr;	
+}
+
+.clock-button {
+    font-size: 48px;
+    color: rgb(224, 224, 224);
+    align-self: center;
+    justify-self: center;
+    cursor: pointer;
+}
+
+.clock-button:hover, .clock-button:focus {
+    color: rgb(129, 129, 129);
+}
+
+.clock-button:active {
+    color: rgb(104, 104, 104);
+    font-size: 56px;
+}
+
+#clock-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    text-align: center;
+}
+
+#clock-container .section-title {
+    font-size: 68px;
+}
+
+#clock-container .section-length {
+    font-size: 64px;
 }
