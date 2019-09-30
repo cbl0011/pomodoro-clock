@@ -13,39 +13,39 @@
     <div id="pomodoro">
         <div id="title">Pomodoro Clock</div>
         <div id="session" class="container edit">
-                <i class="fa fa-arrow-circle-o-down arrow"></i>
+                <i id="session-sub" class="fa fa-arrow-circle-o-down arrow"></i>
                 <div id="session-edit">
                     <span class='section-title'>Session</span>
-                    <span class='section-length'>25</span>
+                    <span id='session-time' class='section-length'>25</span>
                 </div>
-                <i class="fa fa-arrow-circle-o-up arrow"></i>
+                <i id="session-add" class="fa fa-arrow-circle-o-up arrow"></i>
         </div>
         <div id="break" class="container edit">
-                <i class="fa fa-arrow-circle-o-down arrow"></i>
+                <i id="break-sub" class="fa fa-arrow-circle-o-down arrow"></i>
                 <div id="break-edit">
                     <span class='section-title'>Break</span>
-                    <span class='section-length'>5</span>
+                    <span id='break-time' class='section-length'>5</span>
                 </div>
-                <i class="fa fa-arrow-circle-o-up arrow"></i>
+                <i id="break-add" class="fa fa-arrow-circle-o-up arrow"></i>
         </div>
         <div id="clock" class="container">
             <div class="button-container">
-                <i class="fa fa-play-circle-o clock-button"></i>
+                <i id="play" class="fa fa-play-circle-o clock-button"></i>
                 <div></div>
-                <i class="fa fa-refresh clock-button"></i>
+                <i id="refresh" class="fa fa-refresh clock-button"></i>
             </div>
             <div id="clock-container">
-                <span class='section-title'>Session</span>
-                <span class='section-length'>25:00</span>
+                <span id="section-title" class='section-title'>Session</span>
+                <span id="section-length" class='section-length'>25:00</span>
             </div>
             <div class="button-container">
-                <i class="fa fa-pause-circle-o clock-button"></i>
+                <i id="pause" class="fa fa-pause-circle-o clock-button"></i>
                 <div></div>
-                <i class="fa fa-stop-circle-o clock-button"></i>
+                <i id="stop" class="fa fa-stop-circle-o clock-button"></i>
             </div>
         </div>
     </div>
-    <script src="js/script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
